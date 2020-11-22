@@ -16,6 +16,6 @@ jobs:
       - run: python --help
       - run: pip --help
       - run: |
-          git clone https://github.com/mfichman/winbrew %LOCALAPPDATA%\WinBrew
-          pip install %LOCALAPPDATA%\WinBrew
+          git clone https://github.com/mfichman/winbrew $LOCALAPPDATA/WinBrew
+          pip install $LOCALAPPDATA/WinBrew
           winbrew install luajit
