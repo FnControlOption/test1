@@ -14,3 +14,4 @@ jobs:
           python-version: '3.x'
       - run: msbuild -help
       - run: python --help
+      - run: pip --help
