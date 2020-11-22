@@ -12,8 +12,8 @@ jobs:
         with:
           setupOnly: true
           vcpkgGitCommitId: HEAD
-      - run: vcpkg export --zip --out=test zlib
-#       - uses: actions/upload-artifact@v2
-#         with:
-#           name: my-artifact
-#           path: path/to/artifact/world.txt
+      - run: vcpkg export --zip --output=test zlib
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: ${{env.VCPKG_ROOT}}/test.zip
