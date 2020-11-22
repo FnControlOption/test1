@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.0.2
-      - run: where msbuild
+      - run: msbuild
