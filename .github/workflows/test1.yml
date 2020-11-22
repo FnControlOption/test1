@@ -1,0 +1,13 @@
+name: test workflow 1
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  test-job-1:
+    runs-on: windows-latest
+    steps:
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.2
+      - run: which msbuild
