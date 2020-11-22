@@ -12,4 +12,4 @@ jobs:
         with:
           setupOnly: true
           vcpkgGitCommitId: HEAD
-      - run: $env:VCPKG_ROOT\vcpkg
+      - run: ${env:VCPKG_ROOT}\vcpkg
