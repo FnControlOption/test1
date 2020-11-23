@@ -12,7 +12,7 @@ jobs:
         with:
           setupOnly: true
           vcpkgGitCommitId: HEAD
-          vcpkgTriplet: x64-windows
+          # FIXME: vcpkgTriplet: x64-windows
       - run: |
           vcpkg install zlib
           vcpkg export --zip --output=test zlib
